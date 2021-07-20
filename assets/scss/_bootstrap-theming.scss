@@ -64,7 +64,7 @@
 }
 
 .panel {
-  background-color: darken($color-light, 7%);
+  background-color: darken($color-white, 7%);
   &:not(:last-of-type) {
     margin-bottom: $gap * 2;
   }
@@ -80,13 +80,17 @@
 .panel-info > .panel-heading {
   letter-spacing: 0.08em;
 
-  color: $color-light;
+  color: $color-white;
   border: none;
   background-color: $color-accent;
 
   font-size: 1.25rem;
 }
 .panel-body {
-  border: 1px solid $color-gray;
+  border: 1px solid $color-gray-light;
   border-radius: 0 0 4px 4px;
+}
+
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
 }
