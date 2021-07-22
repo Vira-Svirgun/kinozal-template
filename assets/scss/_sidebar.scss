@@ -57,7 +57,7 @@ $image-size-with-padding: $image-size + $gap-md;
         bottom: -4px;
 
         width: calc(100% - #{$image-size-with-padding});
-        height: 1px;
+        height: 0.5px;
 
         content: "";
 
@@ -92,6 +92,7 @@ $image-size-with-padding: $image-size + $gap-md;
 
     &__link {
       @include block-shortener(1rem, 1.5, 50px, 2);
+      transition: color 0.25s;
     }
 
     &__date {
@@ -101,5 +102,48 @@ $image-size-with-padding: $image-size + $gap-md;
 
       font-size: 0.8rem;
     }
+  }
+}
+
+.top-films {
+  &__body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__list {
+    margin-bottom: 0;
+  }
+  &__item {
+    margin-left: -1px;
+    margin-right: -1px;
+    background-color: transparent;
+    color: $color-primary !important;
+    padding-right: 55px;
+
+    &:first-child {
+      border-top: none;
+      border-radius: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+      border-radius: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent  !important;
+      color: $color-white !important;
+      border-color: $color-accent;
+
+      .badge {
+        background-color: $color-dark;
+      }
+    }
+  }
+  &__badge {
+    position: absolute;
+    right: $gap;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
