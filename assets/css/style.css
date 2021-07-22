@@ -49,6 +49,34 @@ a:hover, a:focus {
   font-size: 1.15rem;
 }
 
+.main .site-search {
+  margin-bottom: 45px;
+}
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.new-films-row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+}
+.new-films-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+.new-films-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+.new-films-item__thumbnail {
+  margin-bottom: 0;
+}
+
 .vertical-slider {
   overflow: hidden;
   border-radius: 4px;
