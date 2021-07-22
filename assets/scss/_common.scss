@@ -12,6 +12,7 @@ body {
 }
 a {
   color: $color-primary;
+  transition: color 0.25s;
 
   &:hover,
   &:focus {

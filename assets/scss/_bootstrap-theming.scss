@@ -2,14 +2,14 @@
   margin-bottom: 0;
 
   border-color: transparent;
-  background-color: darken($color-dark, 4%);
+  background-color: $color-deep-dark;
 
   .navbar-nav {
     > .active > a {
       background-color: $color-primary-dark;
 
-      &:focus,
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: $color-primary-light;
       }
     }
@@ -24,8 +24,8 @@
         text-align: center;
       }
 
-      &:focus,
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: $color-primary;
       }
     }
@@ -53,10 +53,10 @@
     margin-top: 0;
   }
 }
-
 .navbar-header {
   text-align: center;
 }
+
 .navbar-toggle {
   float: none;
 
@@ -64,7 +64,7 @@
 }
 
 .panel {
-  background-color: darken($color-white, 7%);
+  background-color: $color-gray-light;
   &:not(:last-of-type) {
     margin-bottom: $gap * 2;
   }
@@ -76,21 +76,28 @@
 
     > .panel-heading {
       letter-spacing: 0.08em;
-    
+
       color: $color-white;
       border: none;
       background-color: $color-accent;
-    
+
       font-size: 1.25rem;
     }
   }
-  
+
   &-body {
-    border: 1px solid $color-gray-light;
+    border: 1px solid $color-gray;
     border-radius: 0 0 4px 4px;
   }
 }
 
-.input-group-lg > .form-control {
-  font-size: 0.875rem;
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
+}
+
+.thumbnail {
+  transition: background-color 0.5s;
 }
